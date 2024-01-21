@@ -18,6 +18,11 @@
     src: url(./assets/fonts/B612_Mono/B612Mono-Regular.ttf);
 }
 
+@font-face {
+    font-family: Chenla;
+    src: url(./assets/fonts/Chenla/Chenla-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -771,4 +776,13 @@ nav {
 .socialContainer {
     display: flex;
     gap: 2vw;
+}
+.copyright {
+    font-size: 1.5rem;
+    font-family: Chenla;
+    text-transform: uppercase;
+    max-width: 40%;
+    margin: auto;
+    color: #181433;
+    margin-bottom: 2vw;
 }
