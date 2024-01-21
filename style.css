@@ -42,6 +42,10 @@ a {
     color: black;
 }
 
+a:hover {
+    transform: scale(1.1);
+}
+
 h1 {
     font-size: 3.75em;
     line-height: 5rem;
@@ -102,6 +106,10 @@ nav {
     margin-bottom: 4vw;
 }
 
+.linksHidden {
+    display: none;
+}
+
 .logo {
     font-size: AnekBankla;
     font-size: 1.25rem;
@@ -129,6 +137,11 @@ nav {
     border-radius: 2.5rem;
     background: var(--Pallet-11-1, #f57059);
     padding: 1rem 2rem;
+}
+
+.btnOrange:hover,
+.btnGreen:hover {
+    transform: scale(1.1);
 }
 
 .links img {
@@ -781,8 +794,195 @@ nav {
     font-size: 1.5rem;
     font-family: Chenla;
     text-transform: uppercase;
-    max-width: 40%;
+    max-width: 50%;
+    text-align: center;
     margin: auto;
     color: #181433;
     margin-bottom: 2vw;
+}
+
+/* ? ##################### MEDIA QUERIES #################### */
+
+@media only screen and (min-width: 1900px) {
+    html {
+        font-size: 125%;
+    }
+
+    .totalBalance {
+        display: none;
+    }
+
+    .vUsers {
+        gap: 1vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    .headerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10vw;
+    }
+
+    .pNormal {
+        text-align: center;
+    }
+
+    .headerLeft h1 {
+        text-align: center;
+    }
+    .headerRight {
+        display: none;
+    }
+
+    .partner h4 {
+        margin-bottom: 5vw;
+    }
+
+    .partnerLogos {
+        gap: 4vw;
+    }
+
+    .serviceContainer {
+        width: 90%;
+        margin-bottom: 10vw;
+    }
+
+    .registerItemImage {
+        padding-bottom: 10vw;
+    }
+
+    .managementApp h3,
+    .managementApp h2,
+    .managementApp p {
+        margin-bottom: 5vw;
+    }
+
+    .managementApp {
+        margin-bottom: 15vw;
+    }
+
+    .vUsers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vw;
+    }
+
+    .vUsers h2 {
+        text-align: center;
+    }
+
+    .vUsersText {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .premiumContainer {
+        max-width: 75%;
+        gap: 5vw;
+    }
+
+    .premiumCardContainer {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .testimonContainer2 {
+        flex-direction: column;
+    }
+
+    .linkContainer {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    html {
+        font-size: 85%;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .linksHidden {
+        display: block;
+    }
+
+    .partnerLogos img {
+        width: 40%;
+    }
+
+    .partnerLogos img:last-of-type {
+        margin: auto;
+    }
+
+    .serviceItem {
+        text-align: center;
+    }
+
+    .registerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        width: 70%;
+    }
+
+    .registerItemImage {
+        display: none;
+    }
+
+    .mAppBtnContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .mAppBtnContainer a:first-of-type,
+    .mAppBtnContainer a:last-of-type {
+        width: 15rem;
+    }
+
+    .linkContainer {
+        width: 90%;
+    }
+
+    .linkItem {
+        text-align: center;
+    }
+
+    .item {
+        text-align: center;
+    }
+
+    .item:last-of-type {
+        text-align: center;
+        margin: auto;
+        margin-top: 5vw;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .break:after {
+        content: "\A";
+        white-space: pre;
+    }
 }
